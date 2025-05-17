@@ -40,10 +40,7 @@ Then edit the `.env` file with your actual database credentials and other settin
 
 The application uses the following environment variables for security settings:
 
-- `SECURE_COOKIES`: Set to "true" in production to enable secure cookies (requires HTTPS)
-- `CSRF_COOKIE_SECURE`: Set to "true" in production to enable secure CSRF cookies (requires HTTPS)
-- `SESSION_COOKIE_SECURE`: Set to "true" in production to enable secure session cookies (requires HTTPS)
-- `LOG_LEVEL`: Set the logging level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+- CONFIGURE JWKS_URI: The URL for the JSON Web Key Set (JWKS) from your authentication server. This is used to validate JWT tokens.
 
 **Important Security Note:**
 - Never commit your `.env` file with real credentials to version control. The `.env` file is already in `.gitignore` to prevent accidental commits.
