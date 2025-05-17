@@ -1,0 +1,25 @@
+# Generic single-database configuration with an async engine.
+
+This directory contains Alembic migrations for the database schema.
+
+## Creating migrations
+
+To create a new migration, run:
+
+```
+alembic revision --autogenerate -m "description of changes"
+```
+
+## Running migrations
+
+To apply migrations, run:
+
+```
+alembic upgrade head
+```
+
+To revert to a previous migration:
+
+```
+alembic downgrade -1
+```
